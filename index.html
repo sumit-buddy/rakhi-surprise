@@ -591,7 +591,12 @@ input {
 </head>
 
 <body style="background:#f0f0f0;">
-<audio src="song.mp3" autoplay="autoplay" loop="loop"></audio>
+<audio id="my_audio" src="song.mp3" loop="loop"></audio>
+<script>
+  window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
 <div class="bas">
 <marquee>Happy Rakshabandhan to you.... ...</marquee></div>
 
