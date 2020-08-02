@@ -591,7 +591,10 @@ input {
 </head>
 
 <body style="background:#f0f0f0;">
-<EMBED src="song.mp3" autostart=true loop=true hidden=true>
+<iframe src="song.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+<audio id="player" autoplay loop>
+    <source src="song.mp3" type="audio/mp3">
+</audio>
 <div class="bas">
 <marquee>Happy Rakshabandhan to you.... ...</marquee></div>
 
