@@ -579,8 +579,16 @@ input {
 </head>
 
 <body style="background:#f0f0f0;">
-<embed  src="song.mp3" loop="false" hidden="true" autostart="true">
+  <audio controls autoplay hidden="hidden">
+  <source src="song.mp3"/>
+</audio>
 
+<script>
+  createjs.Sound.registerSound("song.mp3","");
+  setTimeout ( function () {
+    createjs.Sound.play("");
+  },3000)
+</script>
 
 
 <marquee class="m1" behavior="scroll" direction="up" scrolldelay="5"><br>
